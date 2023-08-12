@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header{
+    background-color: #EAC926;
+}
+main{
+    width:90%;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+ul, li, a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+img{
+    align-content: center;
+}
+.precios{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.descuentos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.descripciones{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+footer{
+    text-align: center;
+    
+}
+.icon-footer{
+    margin-bottom: 10px;
+}
+article{
+    margin: 10px 0px;
+    padding: 10px;
+}
+.desc-productos{
+    border: 10px;
+}
+.burger-menu{
+    text-align: center;
+}
