@@ -1,52 +1,355 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
 header{
     background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1% 10% 1%;
+    box-sizing: border-box;
 }
-main{
-    width:90%;
+header .burger-menu {
+    width: 0%;
+    padding: 0%;
+  }
+.encabezado1 p{
+    font-size: 16px;
+}
+.encabezado1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.encabezado1 .barra{
+    display: flex;
+    width: 40%;
+    position: relative;
+}
+.encabezado1 .logo img{
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.encabezado1 .barra input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 2%;
+}
+.encabezado1 .barra .lupa{
+    outline: none;
+    border: 0;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px 0 8px 20px;
+}
+header .encabezado1 p{
     text-align: center;
+    margin: 10px;
+    padding-top: 10px;
 }
-p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+
+header nav{
+    display: flex;
+    gap: 50%;
+    font-size: 15px;
 }
-ul, li, a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+nav .nav1{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
-h4{
-    font-family: 'Roboto', sans-serif;
+header ul li{
+    list-style-type: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 5px 0;
+}
+nav .nav2{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+section{
+    display: block;
+}
+section.banner img{
+    width: 100%;
+    box-shadow: 1px 13px 30px rgba(0, 0, 0, 0.212);
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+}
+main .visitas h4{
+    margin-bottom: 2%;
+
+}
+h4, .descripciones{
+    color: #666;
+}
+
+main .visitas .cont-productos{
+     display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.visitas h4{
     font-size: 24px;
 }
-img{
-    align-content: center;
+.ofertas h4{
+    font-size: 24px;
 }
-.precios{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+main .visitas .cont-productos article{
+    width: 30%;
+    cursor:pointer;
 }
-.descuentos{
-    font-family: 'Roboto', sans-serif;
+main .visitas .cont-productos img{
+    width: 100%;
+}
+main section article{
+    background-color: #fff;
+}
+main .visitas .cont-productos .productos{
+    padding: 20px;
+    border-top: 3px solid #c6c6c691;;
+}
+main .visitas .cont-productos .productos .precios p{
+font-size: 18px;
+}
+main .visitas .cont-productos .productos .descuentos p{
+    color: #39b54a;
+}
+main .visitas .cont-productos .productos .descripciones p{
     font-size: 16px;
 }
-.descripciones{
-    font-family: 'Roboto', sans-serif;
+main .ofertas h4{
+    margin: 2% 0;;
+}
+main .ofertas .cont-productos{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+main .ofertas .cont-productos article{
+    width: 30%;
+    cursor: pointer;
+}
+main .ofertas .cont-productos img{
+    width: 100%;
+}
+
+main .ofertas .cont-productos .productos{
+    padding: 20px;
+    border-top: 3px solid #c6c6c691;;
+}
+main .ofertas .cont-productos .productos .precios p{
+font-size: 18px;
+}
+main .ofertas .cont-productos .productos .descuentos p{
+    color: #39b54a;
+}
+main .ofertas .cont-productos .productos .descripciones p{
     font-size: 16px;
+}
+main .ofertas h4{
+    margin: 2% 0; 
 }
 footer{
+    margin-top: 3%;
+    background-color: white;
     text-align: center;
-    
+}
+.cont-footer{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    padding: 2% 5%;
+    font-size: 10px;
 }
 .icon-footer{
-    margin-bottom: 10px;
+    color: blue;
+    font-size: 30px;
 }
-article{
-    margin: 10px 0px;
-    padding: 10px;
+p{
+    font-size: 12px;
 }
-.desc-productos{
-    border: 10px;
+.titulo-footer{
+    font-size: 16px;
 }
-.burger-menu{
+
+ /*registro*/
+ main .registro{
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+h1{
     text-align: center;
 }
+form input, select{
+width: 90%;
+margin: auto;
+padding: 20px;
+border-radius: 20px;
+border: 1px solid rgba(0, 0, 0, 0.486);
+}
+label{
+    cursor: default;
+    text-align: center;
+}
+.checkbox {
+    display: flex;
+    flex-direction:row;
+    gap: 14px;
+    margin: auto;
+  }
+button{
+    padding: 10%;
+    
+}
+button{
+    width: 50%;
+    background-color: #03264c;
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+/*login*/
+main .login{
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+}
+@media (max-width: 412px) {
+    .hamburger-button {
+        background-color: #03264c;
+        color: #fff;
+        display: block;
+        max-width: 50%;
+        padding: 15px 15px;
+        border-radius: 8px;
+        font-size: 17px;
+        margin: auto;
+        text-align: center;
+    }
+    header {
+      width: 100%;
+  
+      padding: 20px;
+    }
+    .encabezado1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header .encabezado1 .barra,
+    header .encabezado1 p,
+    header nav {
+      display: none;
+    }
+  
+    main {
+      width: 90%;
+      margin: auto;
+      margin-top: 2%;
+  
+    }
+  
+    main .visitas h4 {
+      margin-bottom: 2%;
+      text-align: center;
+    }
+  
+    main .visitas .cont-productos {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+  
+    main .visitas .cont-productos article {
+      width: 100%;
+      margin: auto;
+    }
+  
+    main .ofertas h4 {
+      margin-bottom: 2%;
+      text-align: center;
+    }
+  
+    main .ofertas .cont-productos{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+    main .ofertas .cont-productos article {
+      width: 100%;
+      margin: auto;
+    }
+    .cont-footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+      padding: 2% 5%;
+      font-size: 20px;
+    }
+  
+    header .hamburger-button{
+      display: block;
+    }
+    main .registro{
+        width: 90%;
+    }
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+      }
+      form input[type="submit"] {
+        width: 40%;
+        background-color: #0044aa;
+        font-size: 15px;
+        color: white;
+        margin: auto;
+      }
+      main .login {
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+  }
